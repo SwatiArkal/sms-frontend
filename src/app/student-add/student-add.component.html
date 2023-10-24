@@ -1,0 +1,46 @@
+
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<div class="container register-form">
+            <div class="form">
+                <div class="note">
+                    <p>Welcomen to the first angular project.</p>
+                </div>
+
+                <div class="form-content">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Your First Name *" [(ngModel)] = "cs.stu.firstName" />
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Your Last Name *" [(ngModel)] = "cs.stu.lastName"/>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Your Date of birth *" [(ngModel)] = "cs.stu.dateOfBirth"/>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Your gender *" [(ngModel)] = "cs.stu.gender"/>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Your email *" [(ngModel)] = "cs.stu.email"/>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Your phoneNumber *" [(ngModel)] = "cs.stu.phoneNumber"/>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" 
+                   (click)="addStudent(cs.stu)" class="btnSubmit">Submit</button>
+                   <button type="button" 
+                   (click)="resetStudent()" class="btnSubmit">Reset</button>
+                </div>
+            </div>
+        </div>
+        
